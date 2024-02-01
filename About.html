@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AZoom</title>
+  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+  
+
+
+.feature {
+    background-color: #101010;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature img {
+  max-width: 170px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.containers h1 {
+  grid-column: span 3; /* Span the full width of the container */
+  text-align: left;   /* Align the text to the left */
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+body {
+      background-color: #101010;
+      color: #fff;
+      margin: 0; /* Reset default margin to eliminate unwanted space */
+    }
+    .carContainer {
+      max-width: 1200px;
+      margin: 10px auto;
+      background-color: #101010;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(231, 2, 2, 0.68); 
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:20px;
+    }
+    .containers {
+      max-width: 1200px;
+      margin: 10px auto;
+      background-color: #101010;
+      padding: 20px;
+      border-radius: 8px;
+     
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:20px;
+}
+
+    
+    header {
+      background-color: #101010;
+      color: #fff; 
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav {
+      background-color: #101010;
+      margin-top: 10px;
+    }
+    nav ul {
+      background-color: #101010;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    .logo {
+      max-height: 250px;
+    }
+    .feature img {
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    margin-bottom: 10px;
+    display: block;
+    max-height: 150px;
+    border-radius: 8px; /* Optionally add border-radius for rounded corners */
+}
+
+
+    a{
+      color: #fff;
+      font-family: 'Noto Sans',sans-serif;
+      font-weight: bold ;
+      text-decoration: none;
+    }
+
+
+  .feature img {
+ object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    margin-bottom: 10px;
+    display: block;
+    max-height: 150px;
+    border-radius: 8px; /* Optionally add border-radius for rounded corners */
+}
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.containers{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+  </style>
+</head>
+<body style="background-color: #101010;">
+  <header>
+    <div>
+      <img src="azoom.png" alt="Azoom Rentals Logo"  style=" width: 150px; height: 80px;" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href=#about>ABOUT</a></li>
+        <li><a href="CarCatelog.html">CARS</a></li>
+        <li><a href="OrderStatus.html">ORDER STATUS</a></li>
+        <li><a href="Login.html">LOGOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="tenor-gif-embed" data-postid="10518740599638545435" data-share-method="host" data-height="600px" data-width="100%"><a href="https://tenor.com/view/forza-horizon-5-toyota-supra-rz-driving-tuned-car-jdm-gif-10518740599638545435"></a><a href="https://tenor.com/search/forza+horizon+5-gifs"></a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <section id="about" style="color: #fff;">
+    <div class="containers">
+    <h1>Why choose AZoom?</h1>
+    <div class="feature">
+      <img src="million.jpg" alt="million">
+    <p><h3>Over a million rentals </p>
+      <p>have been made!</h3></p>
+  </div>
+  <div class="feature">
+    <img src="24.jpg" alt="24hr/7">
+    <p><h3>Rental can be made anyday,</p>
+    <p>anytime of the day</p> 
+  <p>we are operating 24/7</h3></p>
+  </div>
+    <div class="feature">
+      <img src="money.png" alt="cheap">
+    <p><h3>We are the cheapest</p>
+    <p> fuss free car rental</h3></p>
+    </div>
+    <div class="feature">
+      <img src="parking.png" alt="ParkingLot">
+    <p><h3>We have over 800</p> 
+    <p>parking lot</p> 
+    <p>to choose from</h3></p>
+    </div>
+    <div class="feature">
+      <img src="shield.png" alt="Protect">
+    <p><h3>We offer protection </p>
+    <p>for vehicles up to $800 </p>
+    <p>from damages of </p>
+    <p>windscreen and tyre</h3></p>
+  </div>
+    <div class="feature">
+      <img src="discount.png" alt="discount">
+    <p><h3>Free patrol top up is available </p>
+    <p>and enjoy discounts for </p>
+  <p>the next booking</h3></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <a href=""><i></i></a>
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="About.html">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="OrderStatus.html">order status</a></li>
+          <li><a href="Checkout.html">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">Mobile: 88811122</a></li>
+          <li><a href="https://www.google.com/maps/dir//Clementi+Street+13/@1.3235932,103.7711366,17z/data=!4m18!1m8!3m7!1s0x31da1a81172b3ce7:0x59ec902cc42938a1!2sClementi+Street+13!3b1!8m2!3d1.3235932!4d103.7711366!16s%2Fg%2F1tvdg9t7!4m8!1m0!1m5!1m1!1s0x31da1a81172b3ce7:0x59ec902cc42938a1!2m2!1d103.7711366!2d1.3235932!3e3?entry=ttu">Address:Clementi St 13</a></li>
+          <li><a href="#">#02-339</a></li>
+          <li><a href="#">Singapore 123321</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+          <div class="social-links">
+            <a href="http://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="http://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="http://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://sg.linkedin.com/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </section>
+</body>
+</html>
+</body>
+</html>
+
+

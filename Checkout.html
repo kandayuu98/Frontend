@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #101010;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid #101010;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid#101010;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #ffa31a;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid #101010;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body style="background-color: #101010;">
+
+<h2 style="color: white;">Payment Details</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container" style="color:white">
+      <form action="/action_page.php">
+      
+       
+        <div class="row">
+          <div class="col-50">
+            <h3>Date of rent</h3>
+            <label for="bookingDate"><i class="fa fa-calendar"></i> Booking Date</label>
+            <input type="date" id="bookingDate" name="bookingDate" required>
+            <label for="returnDate"><i class="fa fa-calendar"></i> Return Date</label>
+            <input type="date" id="returnDate" name="returnDate" required>
+          </div>
+        
+          
+      
+          <div class="col-25">
+            <h3>Pickup/Drop off</h3>
+            <label for="pickup">Pickup Point</label>
+            <select name="pickup" id="pickup">
+              <option value="volvo">Clementi</option>
+              <option value="saab">Bedok</option>
+              <option value="opel">Woodlands</option>
+              <option value="audi">Orchard</option>
+              <p></p>
+            </select>
+            <label for="dropoff">Dropoff Point</label>
+            <select name="dropoff" id="dropoff">
+              <option value="volvo">Clementi</option>
+              <option value="saab">Bedok</option>
+              <option value="opel">Woodlands</option>
+              <option value="audi">Orchard</option>
+              <p></p>
+            </select>
+            </div>
+        </div>
+            
+          <div class="row">
+            <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Chia Yu Jin">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="KandaYuu@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Clementi st 64">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Singapore">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="SG">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="640123">
+              </div>
+            
+            </div>
+
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container" style="background:white">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Chia Yu Jin" required>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="February" required>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2028" required>
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required> 
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <a href="payment_successful.html">
+            <input value="Pay now" class="btn">
+        </a>
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <!-- Other content specific to the "CHECKOUT" page goes here -->
+
+<h4 style="color: white;">Rental Car Cart<span class="price" style="color:white"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+<p id="carName" style="color: white;"></p>
+<p style="color: white;">Total <span class="price" style="color:white" id="price"></span></p>
+
+    </div>
+  </div>
+</div>
+
+</body>
+<!-- Add this script section at the end of the Checkout.html file -->
+<!-- Other content specific to the "CHECKOUT" page goes here -->
+
+<script>
+    // Function to get URL parameters
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+  
+    // Update the price on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      var carName = getParameterByName('carName');
+      var price = getParameterByName('price');
+      
+      // Update the price on the page
+      document.getElementById('carName').innerText = carName;
+      document.getElementById('price').innerText = '$' + price;
+    });
+  </script>
+  
+  
+</html>

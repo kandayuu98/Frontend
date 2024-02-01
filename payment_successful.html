@@ -1,0 +1,53 @@
+<html>
+<head>
+    <style>
+        @import url(//fonts.googleapis.com/css?family=Lobster);
+
+        .img {
+            width: 150px; /* Adjust the width as needed */
+            height: 150px; /* Adjust the height as needed */
+            margin-left: -2px;
+            margin-bottom: -60px;
+ 
+        }
+
+        body { 
+            font-family: 'Lobster', cursive!important;
+            font-size: 80px;
+            text-align: center; 
+            background-color: #000000; 
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align content horizontally */
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        a {
+            font-size: 30px;
+            margin-bottom: 20px; /* Add some space between text and image */
+        }
+    
+    </style>
+    <title>Payment Success</title>
+</head>
+<body>
+    
+        <div>
+            Thank you for renting with AZoom<p></p>
+            <a>Redirecting you to the rental page...</a><img class="img" src="loading.gif">
+        </div>
+     
+ 
+    <p></p>
+
+    <script>
+        setTimeout(redirectPage, 3000);
+        
+        function redirectPage() {
+            window.location = "OrderStatus.html";
+        }
+    </script>    
+</body>
+</html>

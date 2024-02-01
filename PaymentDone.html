@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Order Status</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+       body {
+      background-color: #101010;
+      color: #fff;
+      margin: 0; /* Reset default margin to eliminate unwanted space */
+    }
+ 
+    .containers {
+      max-width: 1200px;
+      margin: 5px auto;
+      background-color: #101010;
+      padding: 3px;
+      border-radius: 8px;
+      margin-left: -200px;
+     
+      display: grid;
+      grid-template-columns: 1fr ;
+      gap:5px;
+}
+  
+    
+    header {
+      background-color: #101010;
+      color: #fff; 
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav {
+      background-color: #101010;
+      margin-top: 10px;
+    }
+    nav ul {
+      background-color: #101010;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    .logo {
+      max-height: 250px;
+    }
+    .feature img {
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    margin-bottom: 10px;
+    display: block;
+    max-height: 150px;
+    border-radius: 8px; /* Optionally add border-radius for rounded corners */
+}
+
+.button {
+  margin-right: 1px; /* Add right margin to move the button to the right */
+}
+
+/* Additional styling for the button if needed */
+.book-button {
+  background-color: #a50000d9;
+  color: white;
+  padding: 10px 105px;
+  font-size: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Optionally, you can add hover effects for better user experience */
+.book-button:hover {
+  background-color: #ffa31a;
+}
+
+
+    a{
+      color: #fff;
+      font-family: 'Noto Sans',sans-serif;
+      font-weight: bold ;
+      text-decoration: none;
+    }
+
+
+  .feature img {
+ object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    margin-bottom: 10px;
+    display: block;
+    max-height: 150px;
+    border-radius: 8px; /* Optionally add border-radius for rounded corners */
+    
+}
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+    
+.footer-image {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+      </style>
+        <header>
+          <div>
+            <img src="azoom.png" alt="Azoom Rentals Logo"  style=" width: 150px; height: 80px;" class="logo">
+          </div>
+          <nav>
+            <ul>
+              <li><a href="About.html">ABOUT</a></li>
+              <li><a href="CarCatelog.html">CARS</a></li>
+              <li><a href="OrderStatus.html">ORDER STATUS</a></li>
+              <li><a href="Login.html">LOGOUT</a></li>
+            </ul>
+          </header>
+          </nav>
+          <table>
+    
+            <tr>
+              <td>
+                <img src="yellow.webp" alt="yellowCar" width=50% style="background-color: white;" >
+              </td>
+              <td>
+                <div class="containers">
+                  <h3>YellowBeez</h3>
+                  <p>Status:Completed<span style="color:green">&#9989;</span></p>
+                  <p>Rental Deposit Price: $380<span style="color:green">&#9989;</span></p></p>
+                  <p>Rental Period: 5 Days<span style="color:green">&#9989;</span></p></p>
+                  <p>Total Price: $1900<span style="color:green">&#9989;</span></p></p>
+                  <p>Pick Up Date & Location: 7 Apr 2024, Orchard <span style="color:green">&#9989;</span></p>
+                  <p>Drop Off Date & Location: 12 Apr 2024, Woodlands <span style="color:green">&#9989;</span></p>
+                  <p>Total Due After Return: $1900 + $150 (Faulty tyre)<span style="color:green">&#9989;</span></p></p>
+                </div>
+              </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="pureBlack.jpg"width=50%; alt="Black Family Car">
+                </td>
+                <td>
+
+              <div class="containers">
+                <h3>Black Family Car</h3>
+                <p>Status:Completed<span style="color:green">&#9989;</span></p>
+                <p>Rental Deposit Price: $150/Day<span style="color:green">&#9989;</span></p></p>
+                <p>Rental Period: 30 Days<span style="color:green">&#9989;</span></p></p>
+                <p>Total Price: $4500/Day<span style="color:green">&#9989;</span></p></p>
+                <p>Pick Up Date & Location: 1 Mar 2024, Orchard <span style="color:green">&#9989;</span></p>
+                <p>Drop Off Date & Location:31 Mar 2024, Clementi <span style="color:green">&#9989;</span></p>
+                <p>Total Due After Return: $700 + $50 (Faulty Mirror)<span style="color:green">&#9989;</span></p>
+              </div>
+           
+          </td>
+        </tr>
+
+
+
+        </table>
+       
+
+          </body>
+        <footer class="footer">
+          <div class="container">
+            <a href=""><i></i></a>
+            <div class="row">
+              <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                  <li><a href="About.html">about us</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="OrderStatus.html">order status</a></li>
+                  <li><a href="Checkout.html">payment options</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                  <li><a href="#">Mobile: 88811122</a></li>
+                  <li><a href="https://www.google.com/maps/dir//Clementi+Street+13/@1.3235932,103.7711366,17z/data=!4m18!1m8!3m7!1s0x31da1a81172b3ce7:0x59ec902cc42938a1!2sClementi+Street+13!3b1!8m2!3d1.3235932!4d103.7711366!16s%2Fg%2F1tvdg9t7!4m8!1m0!1m5!1m1!1s0x31da1a81172b3ce7:0x59ec902cc42938a1!2m2!1d103.7711366!2d1.3235932!3e3?entry=ttu">Address:Clementi St 13</a></li>
+                  <li><a href="#">#02-339</a></li>
+                  <li><a href="#">Singapore 123321</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="http://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://sg.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </footer>
+              </section>
+              <script>
+                function showConfirmation(containerId, imageId) {
+                  var result = window.confirm("Are you sure you want to cancel this rental? Deposit will not be refunded");
+                  if (result) {
+                    alert("Your reservation has been cancelled, we hope to see you again.");
+                    // Hide the container corresponding to the cancelled rental
+                    document.getElementById(containerId).style.display = 'none';
+                    // Hide the image corresponding to the cancelled rental
+                    document.getElementById(imageId).style.display = 'none';
+                  }
+                }
+               
+              </script>
+              </body>
+</html>
+     
