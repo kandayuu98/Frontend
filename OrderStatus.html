@@ -12,18 +12,15 @@
       color: #fff;
       margin: 0; /* Reset default margin to eliminate unwanted space */
     }
- 
     .containers {
-      max-width: 1200px;
-      margin: 5px auto;
-      background-color: #101010;
-      padding: 3px;
-      border-radius: 8px;
-      margin-left: -200px;
-     
-      display: grid;
-      grid-template-columns: 1fr ;
-      gap:5px;
+  max-width: 600px;
+  margin: 5px auto;
+  background-color: #101010;
+  padding: 10px; /* Adjust this value to control the gap */
+  border-radius: 8px;
+  margin-left: -200px;
+  display: grid;
+  gap: 5px;
 }
   
     
@@ -192,12 +189,23 @@ ul{
         object-fit: cover;
         border-radius: 8px;
     }
+     table {
+            width: 86%;
+        }
 
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        img {
+            width: 40%; /* Adjust the image width as needed */
+            border-radius: 8px;
+        }
       </style>
         <header>
           <div>
-           <img src="azoom.png" alt="Azoom Rentals Logo" style="width: 150px; height: 80px;" class="logo" onclick="window.location.href='About.html'">
-
+            <img src="azoom.png" alt="Azoom Rentals Logo" style="width: 150px; height: 80px;" class="logo" onclick="window.location.href='About.html'">
           </div>
           <nav>
             <ul>
@@ -211,54 +219,54 @@ ul{
           <table>
           <tr>
           <td>
-          <img src="blackCar.jpg" width="50%" alt="Black Car" id="blackBullImage">
+          <img src="blackCar.jpg" width="30%" alt="Black Car" id="blackBullImage">
           </td>
           <td>
           <div class="containers" id="blackBullContainer">
             <h3>Black Bull</h3>
-            <p>Status:Rental In Progress</p>
-            <p>Rental Deposit Price: $250<span style="color:green">&#9989;</span></p>
-            <p>Rental Period: 3 Days</p>
-            <p>Total Price Unpaid After Rental: $500</p>
-            <p>Pick Up Date & Location: 20 Apr 2024, Clementi</p>
-            <p>Drop Off Date & Location: 23 Apr 2024, Bedok </p>
+            <p style="text-align: left;">Status:Rental In Progress</p>
+            <p style="text-align: left;">Rental Deposit Price: $250<span style="color:green">&#9989;</span></p>
+            <p style="text-align: left;">Rental Period: 3 Days</p>
+            <p style="text-align: left;">Total Price Unpaid After Rental: $500</p>
+            <p style="text-align: left;">Pick Up Date & Location: 20 Apr 2024, Clementi</p>
+            <p style="text-align: left;">Drop Off Date & Location: 23 Apr 2024, Bedok </p>
             <button style="background-color: red; color: white; padding: 15px; border-radius: 5px; cursor: pointer;" onclick="showConfirmation('blackBullContainer', 'blackBullImage')">Cancel</button>
           </div>
           </td>
           </tr>
             <tr>
               <td>
-                <img src="yellow.webp" alt="yellowCar" width=50% style="background-color: white;" >
+                <img src="yellow.webp" alt="yellowCar" width=30% style="background-color: white;" >
               </td>
               <td>
                 <div class="containers">
                   <h3>YellowBeez</h3>
-                  <p>Status:Completed<span style="color:green">&#9989;</span></p>
-                  <p>Rental Deposit Price: $380<span style="color:green">&#9989;</span></p>
-                  <p>Rental Period: 5 Days<span style="color:green">&#9989;</span></p>
-                  <p>Total Price Unpaid After Rental: $1520</p>
-                  <p>Pick Up Date & Location: 7 Apr 2024, Orchard <span style="color:green">&#9989;</span></p>
-                  <p>Drop Off Date & Location: 12 Apr 2024, Woodlands <span style="color:green">&#9989;</span></p>
-                  <p>Total Due After Return: $1520 + $150 (Faulty tyre)</p>
+                  <p style="text-align: left;">Status:Completed<span style="color:green">&#9989;</span></p>
+                  <p style="text-align: left;">Rental Deposit Price: $380<span style="color:green">&#9989;</span></p>
+                  <p style="text-align: left;">Rental Period: 5 Days<span style="color:green">&#9989;</span></p>
+                  <p style="text-align: left;">Total Price Unpaid After Rental: $1520</p>
+                  <p style="text-align: left;">Pick Up Date & Location: 7 Apr 2024, Orchard <span style="color:green">&#9989;</span></p>
+                  <p style="text-align: left;">Drop Off Date & Location: 12 Apr 2024, Woodlands <span style="color:green">&#9989;</span></p>
+                  <p style="text-align: left;">Total Due After Return: $1520 + $150 (Faulty tyre)</p>
                   <button style="background-color: green; color: white; padding: 15px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='ToPay.html'">Settle Payment</button>
                 </div>
               </td>
               </tr>
               <tr>
                 <td>
-                  <img src="pureBlack.jpg"width=50%; alt="Black Family Car">
+                  <img src="pureBlack.jpg"width=30%; alt="Black Family Car">
                 </td>
                 <td>
 
               <div class="containers">
                 <h3>Black Family Car</h3>
-                <p>Status:Completed<span style="color:green">&#9989;</span></p>
-                <p>Rental Price: $150/Day<span style="color:green">&#9989;</span></p></p>
-                <p>Rental Period: 30 Days<span style="color:green">&#9989;</span></p></p>
-                <p>Total Price Unpaid After Rental: $4350/Day<span style="color:green">&#9989;</span></p></p>
-                <p>Pick Up Date & Location: 1 Mar 2024, Orchard <span style="color:green">&#9989;</span></p>
-                <p>Drop Off Date & Location:31 Mar 2024, Clementi <span style="color:green">&#9989;</span></p>
-                <p>Total Due After Return: $4350 + $50 (Faulty Mirror)<span style="color:green">&#9989;</span></p>
+                <p style="text-align: left;">Status:Completed<span style="color:green">&#9989;</span></p>
+                <p style="text-align: left;">Rental Price: $150/Day<span style="color:green">&#9989;</span></p></p>
+                <p style="text-align: left;">Rental Period: 30 Days<span style="color:green">&#9989;</span></p></p>
+                <p style="text-align: left;">Total Price Unpaid After Rental: $4350/Day<span style="color:green">&#9989;</span></p></p>
+                <p style="text-align: left;">Pick Up Date & Location: 1 Mar 2024,Orchard <span style="color:green">&#9989;</span></p>
+                <p style="text-align: left;">Drop Off Date & Location: 31 Mar 2024,Clementi <span style="color:green">&#9989;</span></p>
+                <p style="text-align: left;">Total Due After Return: $4350 + $50 (Faulty Mirror)<span style="color:green">&#9989;</span></p>
               </div>
            
           </td>
