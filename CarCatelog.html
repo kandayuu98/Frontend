@@ -77,15 +77,13 @@
       max-height: 250px;
     }
     .feature img {
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-    margin-bottom: 10px;
-    display: block;
-    max-height: 150px;
-    border-radius: 8px; /* Optionally add border-radius for rounded corners */
+  width: 300px;
+  height: 300px;
 }
 
-.button {
-  margin-right: 1px; /* Add right margin to move the button to the right */
+.book-button {
+  padding: 10px 105px;
+  font-size: 22px;
 }
 
 /* Additional styling for the button if needed */
@@ -200,18 +198,29 @@ ul{
 }
 
 /*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
+@media (max-width: 768px) {
+  .feature img {
     width: 100%;
-}
+    height: auto;
+  }
+
+  .book-button {
+    padding: 10px 50px;
+    font-size: 18px;
+  }
 }
 
+@media (max-width: 480px) {
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+
+  .book-button {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+}
 
   </style>
 </head>
